@@ -12,5 +12,8 @@ class Main: NSObject {
     }
 }
 
+// Disable buffering of stdout
+setbuf(__stdoutp, nil)
+
 let main = Main()
 RunLoop.main.run()
